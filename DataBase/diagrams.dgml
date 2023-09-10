@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Database" Label="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\avane\source\repos\project1.1\DataBase\ReservationDb.mdf;Integrated Security=True" Category="Database" Group="Expanded" />
+    <Node Id="dbo" Label="dbo" Category="Schema" Group="Expanded" />
+    <Node Id="dbo.UserTable" Label="dbo.UserTable" Category="Table" Group="Collapsed" />
+    <Node Id="dbo.UserTable_Id" Label="Id" Category="Field Primary" Description="int" />
+    <Node Id="dbo.UserTable_Name" Label="Name" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.UserTable_PassportNumber" Label="PassportNumber" Category="Field" Description="bigint" />
+    <Node Id="dbo.UserTable_Username" Label="Username" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.UserTable_Password" Label="Password" Category="Field" Description="ntext" />
+    <Node Id="dbo.Авиакомпании" Label="dbo.Авиакомпании" Category="Table" Group="Collapsed" />
+    <Node Id="dbo.Авиакомпании_Идентификатор_авиакомпании" Label="Идентификатор_авиакомпании" Category="Field Primary" Description="int" />
+    <Node Id="dbo.Авиакомпании_Название_авиакомпании" Label="Название_авиакомпании" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Авиакомпании_Электронная_почта_авиакомпании" Label="Электронная_почта_авиакомпании" Category="Field" Description="nchar(18)" />
+    <Node Id="dbo.Билеты" Label="dbo.Билеты" Category="Table" Group="Collapsed" />
+    <Node Id="dbo.Билеты_Идентификатор_билета" Label="Идентификатор_билета" Category="Field Primary" Description="int" />
+    <Node Id="dbo.Билеты_Самолет" Label="Самолет" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Билеты_Место_в_салоне" Label="Место_в_салоне" Category="Field" Description="int" />
+    <Node Id="dbo.Билеты_Цена" Label="Цена" Category="Field" Description="int" />
+    <Node Id="dbo.Билеты_Идентификатор_пассажира" Label="Идентификатор_пассажира" Category="Field Foreign" Description="int" />
+    <Node Id="dbo.Билеты_Идентификатор_маршрута" Label="Идентификатор_маршрута" Category="Field Foreign" Description="int" />
+    <Node Id="dbo.Билеты_Зарезервирован" Label="Зарезервирован" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Маршруты" Label="dbo.Маршруты" Category="Table" Group="Collapsed" />
+    <Node Id="dbo.Маршруты_Идентификатор_маршрута" Label="Идентификатор_маршрута" Category="Field Primary" Description="int" />
+    <Node Id="dbo.Маршруты_Пункт_вылета" Label="Пункт_вылета" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Маршруты_Аэропорт_пункта_вылета" Label="Аэропорт_пункта_вылета" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Маршруты_Пункт_прибытия" Label="Пункт_прибытия" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Маршруты_Аэропорт_пункта_прибытия" Label="Аэропорт_пункта_прибытия" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Маршруты_Средняя_длительность_перелета" Label="Средняя_длительность_перелета" Category="Field" Description="int" />
+    <Node Id="dbo.Маршруты_Идентификатор_авиакомпании" Label="Идентификатор_авиакомпании" Category="Field Foreign" Description="int" />
+    <Node Id="dbo.Маршруты_Дата_вылета" Label="Дата_вылета" Category="Field" Description="datetime" />
+    <Node Id="dbo.Маршруты_Состояние" Label="Состояние" Category="Field" Description="nchar(10)" />
+    <Node Id="dbo.Несовершеннолетний" Label="dbo.Несовершеннолетний" Category="Table" Group="Collapsed" />
+    <Node Id="dbo.Несовершеннолетний_Номер_свидельства_о_рождении" Label="Номер_свидельства_о_рождении" Category="Field Optional" Description="int" />
+    <Node Id="dbo.Несовершеннолетний_Возраст" Label="Возраст" Category="Field" Description="int" />
+    <Node Id="dbo.Несовершеннолетний_ФИО_сопровождающего" Label="ФИО_сопровождающего" Category="Field Optional" Description="nvarchar(50)" />
+    <Node Id="dbo.Несовершеннолетний_Идентификатор_пассажира" Label="Идентификатор_пассажира" Category="Field Primary" Description="int" />
+    <Node Id="dbo.Пассажиры" Label="dbo.Пассажиры" Category="Table" Group="Collapsed" />
+    <Node Id="dbo.Пассажиры_Идентификатор_пассажира" Label="Идентификатор_пассажира" Category="Field Primary" Description="int" />
+    <Node Id="dbo.Пассажиры_ФИО_пассажира" Label="ФИО_пассажира" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Пассажиры_Контактный_телефон" Label="Контактный_телефон" Category="Field Optional" Description="int" />
+    <Node Id="dbo.Пассажиры_Электронная_почта" Label="Электронная_почта" Category="Field" Description="nchar(50)" />
+    <Node Id="dbo.Пассажиры_Идентификатор_пользователя" Label="Идентификатор_пользователя" Category="Field Foreign" Description="int" />
+    <Node Id="dbo.Пользователи" Label="dbo.Пользователи" Category="Table" Group="Collapsed" />
+    <Node Id="dbo.Пользователи_Идентификатор_пользователя" Label="Идентификатор_пользователя" Category="Field Primary" Description="int" />
+    <Node Id="dbo.Пользователи_Тип_пользователя" Label="Тип_пользователя" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Пользователи_Логин" Label="Логин" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Пользователи_Пароль" Label="Пароль" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Пользователи_Почта" Label="Почта" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Совершеннолетний" Label="dbo.Совершеннолетний" Category="Table" Group="Collapsed" />
+    <Node Id="dbo.Совершеннолетний_Серия_и_номер_паспорта" Label="Серия_и_номер_паспорта" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Совершеннолетний_Пункт_выдачи" Label="Пункт_выдачи" Category="Field" Description="nvarchar(50)" />
+    <Node Id="dbo.Совершеннолетний_Идентификатор_пассажира" Label="Идентификатор_пассажира" Category="Field Primary" Description="int" />
+  </Nodes>
+  <Links>
+    <Link Source="Database" Target="dbo" Category="Contains" />
+    <Link Source="dbo" Target="dbo.UserTable" Category="Contains" />
+    <Link Source="dbo.UserTable" Target="dbo.UserTable_Id" Category="Contains" />
+    <Link Source="dbo.UserTable" Target="dbo.UserTable_Name" Category="Contains" />
+    <Link Source="dbo.UserTable" Target="dbo.UserTable_PassportNumber" Category="Contains" />
+    <Link Source="dbo.UserTable" Target="dbo.UserTable_Username" Category="Contains" />
+    <Link Source="dbo.UserTable" Target="dbo.UserTable_Password" Category="Contains" />
+    <Link Source="dbo" Target="dbo.Авиакомпании" Category="Contains" />
+    <Link Source="dbo.Авиакомпании" Target="dbo.Авиакомпании_Идентификатор_авиакомпании" Category="Contains" />
+    <Link Source="dbo.Авиакомпании" Target="dbo.Авиакомпании_Название_авиакомпании" Category="Contains" />
+    <Link Source="dbo.Авиакомпании" Target="dbo.Авиакомпании_Электронная_почта_авиакомпании" Category="Contains" />
+    <Link Source="dbo" Target="dbo.Билеты" Category="Contains" />
+    <Link Source="dbo.Билеты" Target="dbo.Билеты_Идентификатор_билета" Category="Contains" />
+    <Link Source="dbo.Билеты" Target="dbo.Билеты_Самолет" Category="Contains" />
+    <Link Source="dbo.Билеты" Target="dbo.Билеты_Место_в_салоне" Category="Contains" />
+    <Link Source="dbo.Билеты" Target="dbo.Билеты_Цена" Category="Contains" />
+    <Link Source="dbo.Билеты" Target="dbo.Билеты_Идентификатор_пассажира" Category="Contains" />
+    <Link Source="dbo.Билеты" Target="dbo.Билеты_Идентификатор_маршрута" Category="Contains" />
+    <Link Source="dbo.Билеты" Target="dbo.Билеты_Зарезервирован" Category="Contains" />
+    <Link Source="dbo.Билеты_Идентификатор_пассажира" Target="dbo.Пассажиры_Идентификатор_пассажира" Label="FK__Билеты__Идентифи__5629CD9C" Category="Foreign Key" />
+    <Link Source="dbo.Билеты_Идентификатор_маршрута" Target="dbo.Маршруты_Идентификатор_маршрута" Label="FK_Билеты_Маршруты" Category="Foreign Key" />
+    <Link Source="dbo" Target="dbo.Маршруты" Category="Contains" />
+    <Link Source="dbo.Маршруты" Target="dbo.Маршруты_Идентификатор_маршрута" Category="Contains" />
+    <Link Source="dbo.Маршруты" Target="dbo.Маршруты_Пункт_вылета" Category="Contains" />
+    <Link Source="dbo.Маршруты" Target="dbo.Маршруты_Аэропорт_пункта_вылета" Category="Contains" />
+    <Link Source="dbo.Маршруты" Target="dbo.Маршруты_Пункт_прибытия" Category="Contains" />
+    <Link Source="dbo.Маршруты" Target="dbo.Маршруты_Аэропорт_пункта_прибытия" Category="Contains" />
+    <Link Source="dbo.Маршруты" Target="dbo.Маршруты_Средняя_длительность_перелета" Category="Contains" />
+    <Link Source="dbo.Маршруты" Target="dbo.Маршруты_Идентификатор_авиакомпании" Category="Contains" />
+    <Link Source="dbo.Маршруты" Target="dbo.Маршруты_Дата_вылета" Category="Contains" />
+    <Link Source="dbo.Маршруты" Target="dbo.Маршруты_Состояние" Category="Contains" />
+    <Link Source="dbo.Маршруты_Идентификатор_авиакомпании" Target="dbo.Авиакомпании_Идентификатор_авиакомпании" Label="FK__Маршруты__Иденти__4BAC3F29" Category="Foreign Key" />
+    <Link Source="dbo" Target="dbo.Несовершеннолетний" Category="Contains" />
+    <Link Source="dbo.Несовершеннолетний" Target="dbo.Несовершеннолетний_Номер_свидельства_о_рождении" Category="Contains" />
+    <Link Source="dbo.Несовершеннолетний" Target="dbo.Несовершеннолетний_Возраст" Category="Contains" />
+    <Link Source="dbo.Несовершеннолетний" Target="dbo.Несовершеннолетний_ФИО_сопровождающего" Category="Contains" />
+    <Link Source="dbo.Несовершеннолетний" Target="dbo.Несовершеннолетний_Идентификатор_пассажира" Category="Contains" />
+    <Link Source="dbo.Несовершеннолетний_Идентификатор_пассажира" Target="dbo.Пассажиры_Идентификатор_пассажира" Label="FK__Несоверше__Идент__5CD6CB2B" Category="Foreign Key" />
+    <Link Source="dbo" Target="dbo.Пассажиры" Category="Contains" />
+    <Link Source="dbo.Пассажиры" Target="dbo.Пассажиры_Идентификатор_пассажира" Category="Contains" />
+    <Link Source="dbo.Пассажиры" Target="dbo.Пассажиры_ФИО_пассажира" Category="Contains" />
+    <Link Source="dbo.Пассажиры" Target="dbo.Пассажиры_Контактный_телефон" Category="Contains" />
+    <Link Source="dbo.Пассажиры" Target="dbo.Пассажиры_Электронная_почта" Category="Contains" />
+    <Link Source="dbo.Пассажиры" Target="dbo.Пассажиры_Идентификатор_пользователя" Category="Contains" />
+    <Link Source="dbo.Пассажиры_Идентификатор_пользователя" Target="dbo.Пользователи_Идентификатор_пользователя" Label="FK__Пассажиры__Идент__534D60F1" Category="Foreign Key" />
+    <Link Source="dbo" Target="dbo.Пользователи" Category="Contains" />
+    <Link Source="dbo.Пользователи" Target="dbo.Пользователи_Идентификатор_пользователя" Category="Contains" />
+    <Link Source="dbo.Пользователи" Target="dbo.Пользователи_Тип_пользователя" Category="Contains" />
+    <Link Source="dbo.Пользователи" Target="dbo.Пользователи_Логин" Category="Contains" />
+    <Link Source="dbo.Пользователи" Target="dbo.Пользователи_Пароль" Category="Contains" />
+    <Link Source="dbo.Пользователи" Target="dbo.Пользователи_Почта" Category="Contains" />
+    <Link Source="dbo" Target="dbo.Совершеннолетний" Category="Contains" />
+    <Link Source="dbo.Совершеннолетний" Target="dbo.Совершеннолетний_Серия_и_номер_паспорта" Category="Contains" />
+    <Link Source="dbo.Совершеннолетний" Target="dbo.Совершеннолетний_Пункт_выдачи" Category="Contains" />
+    <Link Source="dbo.Совершеннолетний" Target="dbo.Совершеннолетний_Идентификатор_пассажира" Category="Contains" />
+    <Link Source="dbo.Совершеннолетний_Идентификатор_пассажира" Target="dbo.Пассажиры_Идентификатор_пассажира" Label="FK__Совершенн__Идент__59FA5E80" Category="Foreign Key" />
+  </Links>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Table" ValueLabel="True">
+      <Condition Expression="HasCategory('Table')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Schema" ValueLabel="True">
+      <Condition Expression="HasCategory('Schema')" />
+      <Setter Property="Background" Value="#FF7F9169" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="True">
+      <Condition Expression="HasCategory('Field')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Database" ValueLabel="True">
+      <Condition Expression="HasCategory('Database')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>
